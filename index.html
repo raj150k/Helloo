@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VIP View Booster - Fixed Version</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Instagram Embed Script -->
+    <script async src="//www.instagram.com/embed.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <h1><i class="fas fa-rocket"></i> VIP View Booster</h1>
+            <p>সঠিক ভিডিও প্রিভিউ সহ (TikTok & Insta)</p>
+        </header>
+
+        <div class="control-panel">
+            <!-- লিংক ইনপুট -->
+            <div class="input-group">
+                <label for="videoLink">ভিডিও লিংক পেস্ট করুন:</label>
+                <input type="text" id="videoLink" placeholder="https://www.tiktok.com/@user/video/...">
+                <small style="color: #888; font-size: 12px;">* TikTok বা Instagram এর সরাসরি লিংক দিন</small>
+            </div>
+
+            <!-- মাল্টিপ্লায়ার সিলেকশন -->
+            <div class="input-group">
+                <label for="multiplier">কত গুণ ভিউ চান?</label>
+                <select id="multiplier">
+                    <option value="10">10x (Basic)</option>
+                    <option value="30" selected>30x (Standard)</option>
+                    <option value="50">50x (Pro)</option>
+                    <option value="100">100x (VIP Ultra)</option>
+                </select>
+            </div>
+
+            <!-- বাটন -->
+            <button id="startBtn" onclick="startBoosting()">
+                <i class="fas fa-play-circle"></i> ভিউ বসানো শুরু করুন
+            </button>
+        </div>
+
+        <!-- প্রগ্রেস বার -->
+        <div class="progress-container">
+            <div id="progressBar" style="width: 0%;"></div>
+        </div>
+        <p id="statusText">প্রস্তুত...</p>
+
+        <!-- ভিডিও গ্রিড -->
+        <div id="videoGrid" class="video-grid"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+      </html>
